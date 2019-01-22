@@ -1,0 +1,82 @@
+/* Here goes your CSS */
+@import 'layout/main';
+@mixin LobsterFont{
+    font-family: 'Lobster', cursive;
+}
+.succes-message {
+    @include LobsterFont;
+    font-weight: bold;
+    font-size: 42px;
+    height: 60px;
+}
+.popup {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    border-radius: 2%;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    height: auto;
+    width: auto;
+    min-height: 350px;
+    background-color: #fff;
+    max-width: 300px;
+}
+.label {
+    display: block;
+    padding-top: 20px;
+    @include LobsterFont;
+}
+.popup-content {
+    overflow: auto;
+    input {
+        padding: 10px 15px;
+        margin-bottom: 13px;
+        border: 1.5px solid grey;
+    }
+    margin: auto;
+    width: 80%;
+    button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        width: 90%;
+        cursor: pointer;
+        padding: 15px 0;
+        transition: all 0.3s;
+        margin-top: 20px;
+    }
+    button:hover {
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #000;
+    }
+}
+.checkbox {
+    position: relative;
+    margin: auto;
+}
+#closeButton {
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    position: absolute;
+    background: #000;
+    color: white;
+    top: -5px;
+    right: -5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1200px){
+    .popup {
+        width: auto;
+        height: auto;
+    }
+}
