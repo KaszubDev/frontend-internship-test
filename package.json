@@ -12,7 +12,8 @@
   },
   "author": "Virtua",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "pretty-checkbox": "^3.0.3"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",

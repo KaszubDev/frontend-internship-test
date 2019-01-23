@@ -24,12 +24,13 @@
               <div class="label">
                   <h2>Login</h2>
               </div>
-              <input type="text" size="25" placeholder="E-mail" name="e-mail" required>
-              <input type="password" size="25" placeholder="Password" name="e-mail" required>
+              <input id="email" type="text" size="25" placeholder="E-mail" pattern="^([0-9]{9})|([A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})$" title="np. john.smith@example.com" name="e-mail" autocomplete="off" required>
+              <input id="passw" type="password" size="25" placeholder="Password" name="e-mail" autocomplete="off" minlength="6" title="Minimalna długość hasła to 6 znaków." required>
               <div class="checkbox">
-              <label>
-                  <input type="checkbox" name="agreement"> I agree to terms & conditions.
-              </label>
+                  <input type="checkbox" id="checkbox_1" name="agreement"> 
+                  <label for="checkbox_1">
+                       I agree to terms & conditions.
+                  </label>
               </div>
               <button type="submit">SUBMIT</button>
           </form>
