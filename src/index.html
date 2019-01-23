@@ -11,8 +11,8 @@
   </head>
   <body>
     <section class="main">
-      <button id="show-popup-form" class="btn btn-main">Click me!</button>
-          <div class="succes-message" style="display: none;">
+      <button id="show-popup-form" class="btn btn-main" style="display: block;">Click me!</button>
+          <div class="succes-message" id="message" style="display: none;">
                 Thank you!
           </div>
     </section>
@@ -20,7 +20,7 @@
          <button id = "closeButton">
             &#x2716;
          </button>
-          <form class="popup-content" action="#">
+          <form class="popup-content" action="#" onsubmit="return false">
               <div class="label">
                   <h2>Login</h2>
               </div>
@@ -32,7 +32,7 @@
                        I agree to terms & conditions.
                   </label>
               </div>
-              <button type="submit">SUBMIT</button>
+              <button type="submit" id="submitBtn" disabled>SUBMIT</button>
           </form>
     </div>
     <script src="js/index.js" charset="utf-8"></script>
